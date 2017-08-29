@@ -1,0 +1,54 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+*::before,*::after{box-sizing:border-box;}
+@keyframes circle{
+    0%{
+   transform:rotate(0deg)
+    }
+    100%{
+    transform:rotate(360deg)    
+    }
+}
+.page{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    width:100vw;
+    background: transparent url(http://p4.music.126.net/di0eeZaWQYcGGgMPMCM_bw==/18147439417259923.jpghttp://p4.music.126.net/di0eeZaWQYcGGgMPMCM_bw==/18147439417259923.jpg) no-repeat center;
+    background-size:cover;
+}
+
+.disc-container{
+position:relative;
+
+}
+.disc-container .pointer {
+   width:24vw;
+   position:absolute;
+   left:50%;
+   
+}
+.disc-container .disc{
+   display:flex;
+   justify-content:center;
+   margin-top:14vw;
+}
+.disc-container .ring{
+width:72vw;
+height:72vw;
+
+}
+.disc-container .light{
+width:72vw;
+animation:circle 20s infinite linear;
+position:absolute;
+}
+.disc-container .cover{
+width:45vw; 
+position:absolute;   
+border:1px solid green;
+align-self:center;
+border-radius:50%;
+animation:circle 20s infinite linear;
+}
+
+
