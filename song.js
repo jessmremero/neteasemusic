@@ -27,7 +27,7 @@ $(function(){
       audio.pause()
       $('disc-container').removeClass('playing')
   })
-  $('play').on('click',function(){
+  $('.play').on('click',function(){
       audio.play()
       $('disc-container').addClass('playing')
   })
